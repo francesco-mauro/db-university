@@ -12,3 +12,7 @@ WHERE departments.name = 'Dipartimento di Neuroscienze'
 AND degrees.level = "magistrale";
 
 3.
+SELECT courses.*
+FROM courses
+INNER JOIN course_teacher ON courses.id = course_teacher.course_id
+WHERE course_teacher.teacher_id = 44;
